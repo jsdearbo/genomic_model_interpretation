@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "genomic-model-interpretation"
+version = "0.1.0"
+description = "Interpretation and visualization toolkit for genomic sequence-to-function models"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [
+    {name = "James Dearborn"},
+]
+
+dependencies = [
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "h5py>=3.0",
+]
+
+[project.optional-dependencies]
+grelu = [
+    "grelu",
+]
+viz = [
+    "matplotlib>=3.7",
+    "seaborn>=0.12",
+    "adjustText>=0.8",
+    "pyBigWig>=0.3",
+]
+motif = [
+    "tangermeme>=0.2",
+]
+dev = [
+    "pytest>=7.0",
+]
+all = [
+    "genomic-model-interpretation[grelu,viz,motif,dev]",
+]
+
+[tool.setuptools.packages.find]
+include = ["interpret*", "motif_tools*", "visualization*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
