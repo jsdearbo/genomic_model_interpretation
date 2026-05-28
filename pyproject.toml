@@ -22,16 +22,15 @@ classifiers = [
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
 ]
-
-[project.urls]
-Repository = "https://github.com/jsdearbo/genomic_model_interpretation"
-"Bug Tracker" = "https://github.com/jsdearbo/genomic_model_interpretation/issues"
-
 dependencies = [
     "numpy>=1.24",
     "pandas>=2.0",
     "h5py>=3.0",
 ]
+
+[project.urls]
+Repository = "https://github.com/jsdearbo/genomic_model_interpretation"
+"Bug Tracker" = "https://github.com/jsdearbo/genomic_model_interpretation/issues"
 
 [project.optional-dependencies]
 grelu = [
