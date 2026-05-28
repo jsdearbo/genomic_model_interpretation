@@ -1,5 +1,9 @@
 # genomic-model-interpretation
 
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![CI](https://github.com/jsdearbo/genomic_model_interpretation/actions/workflows/ci.yml/badge.svg)](https://github.com/jsdearbo/genomic_model_interpretation/actions/workflows/ci.yml)
+
 Interpretation and visualization toolkit for genomic sequence-to-function models (Borzoi, Enformer, etc.). Provides attribution analysis, in-silico mutagenesis, motif discovery with TF-MoDISco, enrichment testing, and publication-quality visualization — all with optional [grelu](https://github.com/Genentech/gReLU) integration.
 
 ## Modules
