@@ -1,6 +1,6 @@
 [build-system]
 requires = ["setuptools>=68.0", "wheel"]
-build-backend = "setuptools.backends._legacy:_Backend"
+build-backend = "setuptools.build_meta"
 
 [project]
 name = "genomic-model-interpretation"
@@ -10,8 +10,22 @@ readme = "README.md"
 license = {text = "MIT"}
 requires-python = ">=3.10"
 authors = [
-    {name = "James Dearborn"},
+    {name = "Jake Dearborn", email = "jakedearborn@gmail.com"},
 ]
+keywords = ["genomics", "interpretability", "attribution", "motif-discovery", "deep-learning", "splicing", "foundation-models"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+[project.urls]
+Repository = "https://github.com/jsdearbo/genomic_model_interpretation"
+"Bug Tracker" = "https://github.com/jsdearbo/genomic_model_interpretation/issues"
 
 dependencies = [
     "numpy>=1.24",
